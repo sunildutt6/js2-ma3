@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+
+  background: linear-gradient(to right, #ebebeb, rgba(128, 128, 128, 0.424));
+}
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: white;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+form > div {
+  margin-bottom: 1rem;
+}
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+button {
+  width: 50%;
+  height: 50px;
+  background: #43f62b83;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding-right: 1rem;
+}
+.menu a.active {
+  color: darkgreen;
+}
+button#logout {
+  width: auto;
+}
+
+.message {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid black;
+  color: grey;
+  border-radius: 1rem;
+}
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+.message.warning {
+  border-color: yellow;
+  color: black;
+  background: rgba(255, 255, 0, 0.452);
+}
+.message.success {
+  border-color: green;
+  color: white;
+  background: rgba(0, 128, 0, 0.767);
+}
